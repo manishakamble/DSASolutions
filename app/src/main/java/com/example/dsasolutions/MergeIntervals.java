@@ -35,9 +35,9 @@ public class MergeIntervals {
 
         int[][] resultArray = merge(intervals);
 
-        for (int i = 0; i < resultArray.length; i++) {
-            for (int j = 0; j < resultArray[i].length; j++)
-                System.out.print(resultArray[i][j] + " ");
+        for (int[] ints : resultArray) {
+            for (int j = 0; j < ints.length; j++)
+                System.out.print(ints[j] + " ");
             System.out.println();
 
         }

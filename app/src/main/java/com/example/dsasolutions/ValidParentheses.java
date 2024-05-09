@@ -23,11 +23,16 @@ public class ValidParentheses {
                   }
             }else {
                 // if opening bracket then push to stack
-                stack.push(s.charAt(i));
+                if(s.charAt(i) == '(' || s.charAt(i)== '{' || s.charAt(i) == '[') {
+                    stack.push(s.charAt(i));
+                    System.out.println("item added in stack "+ s.charAt(i));
+                }
+
             }
         }
         return stack.isEmpty();
     }
+
 
     public static boolean isValid(String s) {
         Stack <Character> st = new Stack<>();
@@ -62,7 +67,9 @@ public class ValidParentheses {
     }
 
     public static void main(String args[]) {
-        String inputString = "()[]{}";
-        System.out.println("Valid Parentheses " + isValid(inputString));
+   //     String inputString = "()[]{}";
+        String inputString = "( A+B{C+(D*)+A+[]}))";
+     //   System.out.println("Valid Parentheses " + isValid(inputString));
+        System.out.println("Valid Parentheses " + isValidParentheses(inputString));
     }
 }
