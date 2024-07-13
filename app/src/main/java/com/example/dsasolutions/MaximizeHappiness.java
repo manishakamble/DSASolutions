@@ -18,6 +18,7 @@ public class MaximizeHappiness {
         for (int j = 0; j < k; j++) {
             totalHappiness += Math.max(pq.poll() - turns, 0);
             turns++;
+            System.out.println("return "+pq.poll());
         }
         return totalHappiness;
     }
