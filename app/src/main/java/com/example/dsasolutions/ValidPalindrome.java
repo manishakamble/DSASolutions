@@ -2,6 +2,7 @@ package com.example.dsasolutions;
 
 public class ValidPalindrome {
 
+    // use 2 pointer approch - move inwards while traversing
     public static boolean isValidPalindrome(String input) {
 
         for (int i = 0, j = input.length() - 1; i < j; i++, j--) {
