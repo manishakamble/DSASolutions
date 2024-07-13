@@ -1,7 +1,5 @@
 package com.example.dsasolutions.sorting;
 
-import java.util.HashMap;
-
 public class selectionSort {
 
     public static void sortArray(int[] arr) {
@@ -29,7 +27,7 @@ public class selectionSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = new int[]{3, 5, 1, 98, 34, 21, 2, 4};
+        int[] arr = new int[]{3, 5, 1, 98, 34, 21, 2, 4};
         sortArray(arr);
     }
 }

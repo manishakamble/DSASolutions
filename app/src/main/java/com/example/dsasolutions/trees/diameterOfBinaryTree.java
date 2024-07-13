@@ -4,7 +4,7 @@ public class diameterOfBinaryTree {
 
     private static int diameter;
 
-    public static int diameterOfBinaryTree(TreeNode root) {
+    public static int diameterOofBinaryTree(TreeNode root) {
         diameter = 0;
         longestPath(root);
         return diameter;
@@ -30,7 +30,7 @@ public class diameterOfBinaryTree {
         node.insert(node, 7);
         node.insert(node, 18);
 
-        int solution = diameterOfBinaryTree(node);
+        int solution = diameterOofBinaryTree(node);
 
         System.out.println(solution);
     }
