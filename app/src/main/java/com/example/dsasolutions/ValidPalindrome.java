@@ -9,9 +9,11 @@ public class ValidPalindrome {
 
             while (i < j && !Character.isLetterOrDigit(input.charAt(i))) {
                 i++;
+
             }
             while (i < j && !Character.isLetterOrDigit(input.charAt(j))) {
                 j--;
+
             }
             if (Character.toLowerCase(input.charAt(i)) != Character.toLowerCase(input.charAt(j))) {
                 return false;
@@ -22,8 +24,8 @@ public class ValidPalindrome {
 
     public static void main(String[] args) {
 
-     //   String inputString = "A man, a plan, a canal: Panama";
-         String inputString = "car racer" ;
+        String inputString = "A man, a plan, a canal: Panama";
+        // String inputString = "car racer" ;
         System.out.println("Valid Palindrome : " + isValidPalindrome(inputString));
     }
 }
