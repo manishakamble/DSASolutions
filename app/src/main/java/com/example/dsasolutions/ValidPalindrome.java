@@ -1,6 +1,7 @@
 package com.example.dsasolutions;
 
-public class ValidPalindrome {
+public class
+ValidPalindrome {
 
     // use 2 pointer approch - move inwards while traversing
     public static boolean isValidPalindrome(String input) {
@@ -24,8 +25,8 @@ public class ValidPalindrome {
 
     public static void main(String[] args) {
 
-        String inputString = "A man, a plan, a canal: Panama";
-        // String inputString = "car racer" ;
+       // String inputString = "A man, a plan, a canal: Panama";
+         String inputString = "car racer" ;
         System.out.println("Valid Palindrome : " + isValidPalindrome(inputString));
     }
 }

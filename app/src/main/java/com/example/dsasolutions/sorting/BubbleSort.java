@@ -39,6 +39,6 @@ public class BubbleSort {
 
         int[] arr = new int[]{3, 5, 1, 98, 34, 21, 2, 4};
         int value = heightChecker(arr);
-         System.out.println("Result ------ >" +value);
+        System.out.println("Result ------ >" +value);
     }
 }
